@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-primary : #FFE15D;
+    --color-darkLiver : #4d4d4d;
+    --color-bg1 : #1a1a1a;
+    --color-bg2 : #333333;
+    --transition: all 400ms ease ;
+}
+
+/* === global style === */
+
+body {
+font-family: "Roboto", sans-serif;
+color: white;
+background: var(--color-bg1);
+}
+
+h1, h2, h3, h4, p {
+    color: white;
+}
+
+h2 {
+    word-wrap: normal;
+    line-height: 1.5rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* === end global style === */
+
+/* === navbar === */
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: var(--color-bg2);
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: right;
+    margin: 5px;
+    align-items: center;
+}
+
+.navbar-item {
+    margin: 10px;
+}
+
+.logo {
+    height: 35px;
+    float: left;
+    margin: 5px;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    transform: scale(1.20);
+}
+
+.navbar-link {
+    font-weight: bold;
+    color: white;
+    transition: var(--transition);
+}
+
+.navbar-link:hover {
+    color: var(--color-primary);
+}
+
+.navbar-button {
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    border: 1px solid;
+    border-color: var(--color-primary);
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.navbar-button:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+}
+ 
+/* === End Navbar === */
+
+/* === Header === */
+
+.header__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 8rem;
+    gap: 10px;
+}
+
+.header__left {
+    margin-left: 4rem;
+}
+
+.header__img {
+    height: 400px;
+    padding: 10px;
+    transition: var(--transition);
+}
+
+.header__img:hover {
+    transform: scale(1.05);
+}
+
+.header__button {
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px;
+    width: 50px;
+    margin-top: 10px;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.header__button:hover {
+background-color: var(--color-primary);
+color: var(--color-bg1);
+}
+
+@media screen and (max-width: 768px) {
+    .header__content {
+        grid-template-columns: repeat(1, 4fr);
+        margin-top: 7rem;
+    }
+    .header__right {
+        text-align: center;
+       
+    }
+    .header__left {
+    margin-left: 8rem;
+    }
+    .header__button {
+     text-align: center;
+     margin: 10px auto; 
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .header__right {
+        justify-content: center;
+        align-items: center;
+    }
+    .header__left {
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* === End Header === */
+
+/* === About Me === */
+
+.aboutme__title {
+    color: white;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.aboutme__content {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+}
+
+.aboutme__item {
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    transition: var(--transition);
+}
+
+.aboutme__item:hover {
+    transform: scale(1.05);
+}
+
+.aboutme__item h3 {
+    font-weight: bold;
+}
+
+.aboutme__icon {
+    color: var(--color-primary);
+    align-items: center;
+    font-size: larger;
+    margin: 0.8rem;
+}
+
+.waves1 {
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutme__content {
+        grid-template-columns: repeat(1, 4fr);
+    }
+}
+
+/* === End About Me === */
+
+/* === My Experience === */
+
+.experience {
+    background-color: var(--color-bg2);
+    margin-top: -5px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.experience__title {
+    text-align: center;
+}
+
+.certification__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 20px;
+}
+
+.project__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 20px;
+}
+
+.experience__main {
+    margin: 1rem;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.experience__content {
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    transition: var(--transition);
+}
+/* === certificate experience === */
+.experience__certification {
+    margin-top: 1rem;
+    padding: 5px;
+    justify-content: center;
+}
+.certificate-image {
+    display: inline-block;
+    width: 100%;
+}
+
+.certificate__js {
+    transition: var(--transition);  
+}
+
+.certificate__js:hover {
+    transform: scale(1.05);
+}
+
+.certificate__web {
+    transition: var(--transition);
+}
+
+.certificate__web:hover {
+    transform: scale(1.05);
+}
+
+.certificate__figma {
+    transition: var(--transition);
+}
+
+.certificate__figma:hover {
+    transform: scale(1.05);
+}
+/* === project experience === */
+.experience__project {
+    margin-top: 1rem;
+    padding: 5px;
+}
+
+.project-image {
+    display: inline-block;
+    width: 100%;
+}
+
+.project-web {
+    transition: var(--transition);
+}
+
+.project-web:hover {
+    transform: scale(1.05);
+}
+
+.project-microblog {
+    transition: var(--transition);
+}
+
+.project-microblog:hover {
+    transform: scale(1.05);
+}
+
+.project-userPersona {
+    transition: var(--transition);
+}
+
+.project-userPersona:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .experience__main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* === end project experience === */
+
+/* === Footer ==== */
+footer {
+    background-color: var(--color-bg2);
+    padding-bottom: 10px;
+}
+.footer-contact {
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    border: 1px solid var(--color-darkLiver);
+    background: var(--color-darkLiver);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 1rem;
+}
+.footer-icon {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+.footer-icon:hover {
+    transform: scale(1.05);
+}
+#copyright {
+    padding: 10px;
+    text-align: center;
+}
+/* === end footer === */
+
+
+
+
+
+
+
+
