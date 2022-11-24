@@ -101,7 +101,11 @@ nav {
     background-color: transparent;
     color: var(--color-primary);
 }
- 
+@media screen and (max-width: 768px) {
+    .navbar-link {
+        display: none;
+    }
+}
 /* === End Navbar === */
 
 /* === Header === */
