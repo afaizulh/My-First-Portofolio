@@ -107,19 +107,11 @@ nav {
     nav {
         width: 100%;
     }
-    .navbar-link {
-        /* display: block; */
-    }
 }
 
 @media screen and (max-width: 470px) {
     .navbar-link {
         display: none;
-    }
-}
-@media screen and (min-width: 375px) {
-    .navbar-link {
-        /* display: non; */
     }
 }
 /* === End Navbar === */
