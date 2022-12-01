@@ -18,23 +18,22 @@
     <!-- Icon -->
     <script src="https://kit.fontawesome.com/dfdc9ae7ac.js" crossorigin="anonymous"></script>
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
     <!-- Navbar -->
     <nav>
-        <img class="logo" src="./img/Logo no BG.png" alt="">
         <ul class="navbar-list">
+             <li class="logo">
+                 <img class="logo" src="./img/Logo no BG.png" alt="">
+             </li>
             <li class="navbar-item">
-                <a href="#aboutme" class="navbar-link">About Me</a>
+                 <a href="#aboutme" class="navbar-link">About Me</a>
+             </li>
+             <li class="navbar-item">
+                 <a href="#myexperience" class="navbar-link">My Experience</a>
             </li>
             <li class="navbar-item">
-                <a href="#myexperience" class="navbar-link">My Experience</a>
-            </li>
-            <li class="navbar-item">
-                <a href="#" class="navbar-button">Hire Me!</a>
+                 <a href="#" class="navbar-button">Hire Me!</a>
             </li>
         </ul>
     </nav>
@@ -51,25 +50,23 @@
                 <h1>Hi Friend's!</h1>
                 <p>My name Ahmad Faizulhakim. Im a student at IDN BS and a Junior Web Developer. For more information, see my Web Portofolio!</p>
                 <div class="header__button">
-                    <a href="#aboutme"></a>
-                    <h4>Go!</h4>
+                    <a href="#aboutme"><h4>Go!</h4></a>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Header -->
 
-    <div id="aboutme"></div>
     <!-- About Me -->
+    <div id="aboutme"></div>
     <article>
         <div class="container aboutme__container">
-            <div data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom" class="aboutme__title">
+            <div class="aboutme__title">
                 <h2>About Me</h2>
             </div>
             <div class="aboutme__content">
                 <!-- Content 1 -->
-                <div data-aos="fade-right" class="aboutme__item">
+                <div class="aboutme__item">
                     <div class="aboutme__placeOfBirthAndAge">
                         <div class="aboutme__icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
                         <div class="aboutme__text">
@@ -79,7 +76,7 @@
                     </div>
                 </div>
                 <!-- Content 2 -->
-                <div data-aos="fade-left" class="aboutme__item">
+                <div class="aboutme__item">
                     <div class="aboutme__myEducational">
                         <div class="aboutme__icon"><i class="fa-solid fa-graduation-cap"></i></div>
                         <div class="aboutme__text">
@@ -92,7 +89,7 @@
                     </div>
                 </div>
                 <!-- Content 3 -->
-                <div data-aos="fade-right" class="aboutme__item">
+                <div class="aboutme__item">
                     <div class="aboutme__myHobbies">
                         <div class="aboutme__icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
                         <div class="aboutme__text">
@@ -104,7 +101,7 @@
 
 
                 <!-- Content 4 -->
-                <div data-aos="fade-left" class="aboutme__item">
+                <div class="aboutme__item">
                     <div class="about__myDreams">
                         <div class="aboutme__icon"><i class="fa-regular fa-paper-plane"></i></div>
                         <div class="aboutme__text">
@@ -124,15 +121,14 @@
     <!-- My Experience -->
     <div class="experience">
             <div class="container experience__container">
-                <div data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom" class="experience__title">
+                <div class="experience__title">
                     <h2>My Experience</h2>
                 </div>
-                <div data-aos="zoom-in" class="experience__main">
+                <div class="experience__main">
                     <div class="left__experience">
                         <div class="experience__certification">
                             <div class="certification__title">
-                                <h4>My Certificate</h4>
+                                <h3>My Certificate</h3>
                             </div>
                         <div class="experience__content">
                             <!-- Content 1 -->
@@ -153,7 +149,7 @@
                     <div class="right__experience">
                         <div class="experience__project">
                             <div class="project__title">
-                                <h4>My Project</h4>
+                                <h3>My Project</h3>
                             </div>
                         <div class="experience__content">
                                 <!-- Content 1 -->
@@ -184,14 +180,14 @@
                 <h3>Contact Me</h3>
             </div>
             <div class="footer-content">
-                <div class="footer-icon">
-                <a href="https://www.linkedin.com/in/ahmad-faizulhakim-b932a7247/"></a><i class="fa-brands fa-linkedin"></i></div>
-                <div class="footer-icon">
-                <a href="https://github.com/afaizulh"></a><i class="fa-brands fa-github"></i></div>
-                <div class="footer-icon">
-                <a href="https://medium.com/@faizul.me"></a><i class="fa-brands fa-medium"></i></div>
-                <div class="footer-icon"></i>
-                <a href="https://www.instagram.com/afaizulhakim/"></a><i class="fa-brands fa-instagram"></i></div>
+                
+                <a href="https://www.linkedin.com/in/ahmad-faizulhakim-b932a7247/" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a>
+                
+                <a href="https://github.com/afaizulh" class="footer-icon"><i class="fa-brands fa-github"></i></a>
+                
+                <a href="https://medium.com/@faizul.me" class="footer-icon"><i class="fa-brands fa-medium"></i></a>
+                
+                <a href="https://www.instagram.com/afaizulhakim/" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div id="copyright" align="center">
                     &copy; 2020 - 2022 Web Portofolio
@@ -201,12 +197,5 @@
 
     <!-- Copyright JS -->
     <script src="./Js/footer.js"></script>
-
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-      </script>
 </body>
 </html>
