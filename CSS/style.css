@@ -22,9 +22,9 @@ html {
 }
 
 body {
-font-family: "Roboto", sans-serif;
-color: white;
-background: var(--color-bg1);
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background: var(--color-bg1);
 }
 
 h1, h2, h3, h4, p {
@@ -56,7 +56,7 @@ nav {
     left: 0;
     z-index: 99;
     background-color: var(--color-bg2);
-    box-shadow: 0 0 5 10 rgba(0, 0, 2, 0) ;
+    /* box-shadow: white 2px; */
 }
 
 .navbar-list {
@@ -122,11 +122,25 @@ nav {
 
 /* === Header === */
 
+.bg-header{
+    background-image: url(../img/Sepatu\ -\ 3627.mp4);
+    background-position: center;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -99;
+    position: absolute;
+    top: 0;
+    right: 0;
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+}
+
 .header__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin: 7rem auto;
+    margin: 10rem auto;
     gap: 10px;
 }
 
@@ -181,7 +195,12 @@ color: var(--color-bg1);
      text-align: center;
      margin: 10px auto; 
     }
+}
 
+@media screen and (max-width) {
+    .header__img {
+        height: 400px;
+    }
 }
 
 @media screen and (min-width: 375px) {
@@ -197,7 +216,7 @@ color: var(--color-bg1);
 .aboutme__title {
     color: white;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 20rem;
     margin-bottom: 2rem;
 }
 
