@@ -132,8 +132,8 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    filter: brightness(40%);
-    -webkit-filter: brightness(40%);
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
 }
 
 .header__content {
