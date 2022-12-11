@@ -55,7 +55,8 @@ nav {
     top: 0;
     left: 0;
     z-index: 99;
-    background-color: var(--color-bg2);
+    background-color: rgba(0, 0, 0, 0.6);
+    
     /* box-shadow: white 2px; */
 }
 
@@ -123,7 +124,7 @@ nav {
 /* === Header === */
 
 .bg-header{
-    background-image: url(../img/Sepatu\ -\ 3627.mp4);
+    background-image: url(../img/Program\ -\ 120\ \(1\).mp4);
     background-position: center;
     width: auto;
     background-repeat: no-repeat;
@@ -132,8 +133,6 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    filter: brightness(50%);
-    -webkit-filter: brightness(50%);
 }
 
 .header__content {
