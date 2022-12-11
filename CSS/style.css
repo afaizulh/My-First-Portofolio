@@ -337,48 +337,6 @@ color: var(--color-bg1);
     }
 }
 
-
-/* .experience {
-    background-color: var(--color-bg2);
-    margin-top: -5px;
-    justify-content: center;
-    padding-bottom: 10px;
-}
-
-.experience__title {
-    text-align: center;
-}
-
-.certification__title {
-    text-align: center;
-    margin-bottom: 1rem;
-    padding-top: 20px;
-}
-
-.project__title {
-    text-align: center;
-    margin-bottom: 1rem;
-    padding-top: 20px;
-}
-
-.experience__main {
-    margin: 1rem;
-    justify-content: center;
-    line-height: 1.5rem;
-    padding: 0.5rem;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-.experience__content {
-    justify-content: center;
-    border: 1px solid var(--color-primary);
-    border-radius: 10px;
-    padding: 0.5rem;
-    line-height: 1.5rem;
-    transition: var(--transition);
-}
 /* === certificate experience === */
 .experience__certification {
     margin-top: 1rem;
